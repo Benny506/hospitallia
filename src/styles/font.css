@@ -1,0 +1,135 @@
+/* 
+   Hospitallia Font Styling Specifier
+   Fonts: Outfit (Headings), Inter (Body)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--bs-dark);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Text Content */
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
+
+span,
+small,
+b,
+strong,
+i,
+em {
+    font-family: inherit;
+}
+
+small {
+    font-size: 0.875rem;
+}
+
+/* Links */
+a {
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    text-align: inherit;
+}
+
+/* Sectioning */
+section,
+article,
+aside,
+nav,
+header,
+footer {
+    display: block;
+}
+
+/* Generic container tags */
+div {
+    font-family: inherit;
+}
+
+/* Form elements */
+input,
+button,
+select,
+textarea {
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+button {
+    font-family: var(--font-heading);
+    font-weight: 600;
+}

@@ -1,0 +1,224 @@
+{
+    "hospitals": [
+        {
+            "id": "h1",
+            "name": "St. Jude's Specialty Hospital",
+            "lat": 6.5244,
+            "lng": 3.3792,
+            "address": "123 Medical Drive, Victoria Island, Lagos",
+            "rating": 4.8,
+            "type": "Specialist",
+            "phone": "+234 800 123 4567",
+            "status": "Available"
+        },
+        {
+            "id": "h2",
+            "name": "City General Hospital",
+            "lat": 6.5350,
+            "lng": 3.3650,
+            "address": "45 General Way, Ikeja, Lagos",
+            "rating": 4.5,
+            "type": "General",
+            "phone": "+234 800 234 5678",
+            "status": "Busy"
+        },
+        {
+            "id": "h3",
+            "name": "LifeCare Children's Clinic",
+            "lat": 6.5100,
+            "lng": 3.3900,
+            "address": "88 Pediatric Lane, Lekki, Lagos",
+            "rating": 4.9,
+            "type": "Pediatric",
+            "phone": "+234 800 345 6789",
+            "status": "Available"
+        },
+        {
+            "id": "h4",
+            "name": "Greenfield Maternity Center",
+            "lat": 6.5450,
+            "lng": 3.3500,
+            "address": "12 Motherhood Street, Surulere, Lagos",
+            "rating": 4.6,
+            "type": "Maternity",
+            "phone": "+234 800 456 7890",
+            "status": "Closed"
+        },
+        {
+            "id": "h5",
+            "name": "Apex Heart & Lung Institute",
+            "lat": 6.5150,
+            "lng": 3.3750,
+            "address": "77 Cardiac Ave, Ikoyi, Lagos",
+            "rating": 4.7,
+            "type": "Cardiology",
+            "phone": "+234 800 567 8901",
+            "status": "Available"
+        },
+        {
+            "id": "h6",
+            "name": "Wellness Medical Center",
+            "lat": 6.5200,
+            "lng": 3.3850,
+            "address": "22 Wellness Road, Yaba, Lagos",
+            "rating": 4.4,
+            "type": "General",
+            "phone": "+234 800 678 9012",
+            "status": "Available"
+        },
+        {
+            "id": "h7",
+            "name": "Oceanic Eye Clinic",
+            "lat": 6.5300,
+            "lng": 3.4000,
+            "address": "55 Vision Street, Victoria Island, Lagos",
+            "rating": 4.8,
+            "type": "Ophthalmology",
+            "phone": "+234 800 789 0123",
+            "status": "Busy"
+        },
+        {
+            "id": "h8",
+            "name": "Sunrise Orthopedic Center",
+            "lat": 6.5400,
+            "lng": 3.3600,
+            "address": "90 Bone Drive, Ikeja, Lagos",
+            "rating": 4.3,
+            "type": "Orthopedic",
+            "phone": "+234 800 890 1234",
+            "status": "Available"
+        },
+        {
+            "id": "h9",
+            "name": "Metro Dental Place",
+            "lat": 6.5050,
+            "lng": 3.3800,
+            "address": "34 Smile Ave, Surulere, Lagos",
+            "rating": 4.9,
+            "type": "Dental",
+            "phone": "+234 800 901 2345",
+            "status": "Available"
+        },
+        {
+            "id": "h10",
+            "name": "Radiant Skin Clinic",
+            "lat": 6.5250,
+            "lng": 3.3550,
+            "address": "12 Glow Lane, Maryland, Lagos",
+            "rating": 4.6,
+            "type": "Dermatology",
+            "phone": "+234 800 012 3456",
+            "status": "Busy"
+        },
+        {
+            "id": "h11",
+            "name": "Grand View Hospital",
+            "lat": 6.5500,
+            "lng": 3.3700,
+            "address": "100 Skyline Blvd, Agege, Lagos",
+            "rating": 4.2,
+            "type": "General",
+            "phone": "+234 800 123 4567",
+            "status": "Available"
+        },
+        {
+            "id": "h12",
+            "name": "Silverline Diagnostic Lab",
+            "lat": 6.5120,
+            "lng": 3.3620,
+            "address": "78 Lab Way, Mushin, Lagos",
+            "rating": 4.5,
+            "type": "Diagnostic",
+            "phone": "+234 800 234 5678",
+            "status": "Available"
+        },
+        {
+            "id": "h13",
+            "name": "First Choice Fertility",
+            "lat": 6.5380,
+            "lng": 3.3950,
+            "address": "45 Hope Street, Ikoyi, Lagos",
+            "rating": 4.7,
+            "type": "Fertility",
+            "phone": "+234 800 345 6789",
+            "status": "Busy"
+        },
+        {
+            "id": "h14",
+            "name": "Peak Mental Health",
+            "lat": 6.5280,
+            "lng": 3.3450,
+            "address": "23 Peace Lane, Gbagada, Lagos",
+            "rating": 4.8,
+            "type": "Psychiatry",
+            "phone": "+234 800 456 7890",
+            "status": "Available"
+        },
+        {
+            "id": "h15",
+            "name": "Elite Sports Medicine",
+            "lat": 6.5420,
+            "lng": 3.3820,
+            "address": "66 Athlete Drive, Ikeja, Lagos",
+            "rating": 4.6,
+            "type": "Sports Medicine",
+            "phone": "+234 800 567 8901",
+            "status": "Available"
+        },
+        {
+            "id": "h16",
+            "name": "Riverdale Dialysis Center",
+            "lat": 6.5180,
+            "lng": 3.3580,
+            "address": "11 River Road, Apapa, Lagos",
+            "rating": 4.4,
+            "type": "Nephrology",
+            "phone": "+234 800 678 9012",
+            "status": "Busy"
+        },
+        {
+            "id": "h17",
+            "name": "Golden Years Geriatric",
+            "lat": 6.5320,
+            "lng": 3.3720,
+            "address": "89 Elder Way, Festac, Lagos",
+            "rating": 4.9,
+            "type": "Geriatric",
+            "phone": "+234 800 789 0123",
+            "status": "Available"
+        },
+        {
+            "id": "h18",
+            "name": "Unity Community Clinic",
+            "lat": 6.5020,
+            "lng": 3.3880,
+            "address": "5 Unity Square, Ebute Metta, Lagos",
+            "rating": 4.1,
+            "type": "Community",
+            "phone": "+234 800 890 1234",
+            "status": "Available"
+        },
+        {
+            "id": "h19",
+            "name": "Legacy Cancer Institute",
+            "lat": 6.5480,
+            "lng": 3.4050,
+            "address": "12 Legacy Way, Victoria Island, Lagos",
+            "rating": 4.8,
+            "type": "Oncology",
+            "phone": "+234 800 901 2345",
+            "status": "Busy"
+        },
+        {
+            "id": "h20",
+            "name": "NorthStar ENT Clinic",
+            "lat": 6.5220,
+            "lng": 3.3400,
+            "address": "33 North Ave, Oshodi, Lagos",
+            "rating": 4.5,
+            "type": "ENT",
+            "phone": "+234 800 012 3456",
+            "status": "Available"
+        }
+    ]
+}

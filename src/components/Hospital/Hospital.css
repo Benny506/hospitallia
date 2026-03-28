@@ -1,0 +1,44 @@
+.hospital-sidebar {
+    width: 360px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .hospital-sidebar {
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+    }
+}
+
+.hospital-card {
+    border: 1px solid transparent !important;
+}
+
+.hospital-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.hospital-card.selected {
+    background: #FFFAF8 !important;
+    border: 1px solid var(--bs-primary-light) !important;
+}
+
+/* Custom Scrollbar for Sidebar */
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 10px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: #BDBDBD;
+}

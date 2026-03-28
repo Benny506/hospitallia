@@ -1,0 +1,131 @@
+.app-alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10000;
+    pointer-events: none;
+    /* Allow clicks to pass through container */
+    max-width: 400px;
+    width: 100%;
+}
+
+.app-alert {
+    position: relative;
+    padding: 16px 40px 16px 56px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    pointer-events: all;
+    /* Receive clicks on individual alerts */
+    overflow: hidden;
+}
+
+.alert-icon-container {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-title {
+    margin: 0 0 2px 0;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.alert-message {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #5D4037;
+}
+
+.alert-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #A1887F;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.alert-close-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--bs-dark);
+}
+
+/* Progress-bar Style */
+.alert-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.alert-progress-fill {
+    height: 100%;
+    background: currentColor;
+    opacity: 0.5;
+}
+
+/* Variant Styles */
+.alert-success {
+    color: var(--bs-success);
+    border-left: 6px solid var(--bs-success);
+}
+
+.alert-error {
+    color: var(--bs-danger);
+    border-left: 6px solid var(--bs-danger);
+}
+
+.alert-warning {
+    color: var(--bs-warning);
+    border-left: 6px solid var(--bs-warning);
+}
+
+.alert-info {
+    color: var(--bs-info);
+    border-left: 6px solid var(--bs-info);
+}
+
+.alert-success .alert-title {
+    color: #1B5E20;
+}
+
+.alert-error .alert-title {
+    color: #B71C1C;
+}
+
+.alert-warning .alert-title {
+    color: #E65100;
+}
+
+.alert-info .alert-title {
+    color: #3E2723;
+}

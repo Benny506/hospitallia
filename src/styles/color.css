@@ -1,0 +1,120 @@
+/* 
+   Hospitallia Color Theme - Brownish Earthy Tones
+   Overriding Bootstrap defaults
+*/
+
+:root {
+    /* Define custom color variables */
+    --primary-brown: #6F4E37;
+    --secondary-brown: #B8977E;
+    --success-green: #388E3C;
+    --danger-red: #C62828;
+    --warning-orange: #F57F17;
+    --info-wood: #5D4037;
+    --light-beige: #EFEBE9;
+    --dark-charcoal: #3E2723;
+
+    /* Override Bootstrap CSS Variables */
+    --bs-primary: var(--primary-brown);
+    --bs-primary-rgb: 111, 78, 55;
+    
+    --bs-secondary: var(--secondary-brown);
+    --bs-secondary-rgb: 184, 151, 126;
+    
+    --bs-success: var(--success-green);
+    --bs-success-rgb: 56, 142, 60;
+    
+    --bs-danger: var(--danger-red);
+    --bs-danger-rgb: 198, 40, 40;
+    
+    --bs-warning: var(--warning-orange);
+    --bs-warning-rgb: 245, 127, 23;
+    
+    --bs-info: var(--info-wood);
+    --bs-info-rgb: 93, 64, 55;
+    
+    --bs-light: var(--light-beige);
+    --bs-light-rgb: 239, 235, 233;
+    
+    --bs-dark: var(--dark-charcoal);
+    --bs-dark-rgb: 62, 39, 35;
+
+    /* Body background and text */
+    --bs-body-bg: var(--light-beige);
+    --bs-body-color: var(--dark-charcoal);
+    --bs-link-color: var(--primary-brown);
+    --bs-link-hover-color: #5D4037;
+}
+
+/* Explicit class overrides for components */
+
+/* Buttons */
+.btn-primary {
+    --bs-btn-bg: var(--primary-brown);
+    --bs-btn-border-color: var(--primary-brown);
+    --bs-btn-hover-bg: #5D4037;
+    --bs-btn-hover-border-color: #5D4037;
+    --bs-btn-active-bg: #4E342E;
+    --bs-btn-active-border-color: #4E342E;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--primary-brown);
+    --bs-btn-border-color: var(--primary-brown);
+    --bs-btn-hover-bg: var(--primary-brown);
+    --bs-btn-hover-border-color: var(--primary-brown);
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--secondary-brown);
+    --bs-btn-border-color: var(--secondary-brown);
+    --bs-btn-hover-bg: #A1887F;
+    --bs-btn-hover-border-color: #A1887F;
+}
+
+/* Badges */
+.badge.bg-primary {
+    background-color: var(--primary-brown) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--secondary-brown) !important;
+}
+
+.badge.bg-success {
+    background-color: var(--success-green) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--danger-red) !important;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary-brown) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-brown) !important;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-brown) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-brown) !important;
+}
+
+/* Navbar */
+.navbar-primary {
+    background-color: var(--primary-brown) !important;
+}
+
+/* Alert */
+.alert-primary {
+    --bs-alert-bg: #D7CCC8;
+    --bs-alert-border-color: var(--secondary-brown);
+    --bs-alert-color: var(--dark-charcoal);
+}

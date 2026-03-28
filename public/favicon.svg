@@ -1,0 +1,22 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="intuitive-premium-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F4E37" />
+      <stop offset="100%" stop-color="#A1887F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Premium Map Pin Silhouette -->
+  <path d="M50 5C32.05 5 17.5 19.55 17.5 37.5C17.5 61.88 50 95 50 95C50 95 82.5 61.88 82.5 37.5C82.5 19.55 67.95 5 50 5Z" 
+        fill="url(#intuitive-premium-gradient)"/>
+  
+  <!-- Clear Minimalist 'H' Cutout -->
+  <path d="M38 28V52M62 28V52M38 40H62" 
+        stroke="white" 
+        stroke-width="7" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+        
+  <!-- Subtle Inset Point for Depth -->
+  <circle cx="50" cy="95" r="2.5" fill="#4E342E" opacity="0.3" />
+</svg>
