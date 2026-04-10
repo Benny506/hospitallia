@@ -90,8 +90,8 @@ const Login = () => {
                                             onChange={(e) => setPassword(e.target.value)}
                                             required
                                         />
-                                        <Button 
-                                            variant="transparent" 
+                                        <Button
+                                            variant="transparent"
                                             className="border-0 px-3"
                                             onClick={() => setShowPassword(!showPassword)}
                                         >
@@ -100,9 +100,9 @@ const Login = () => {
                                     </InputGroup>
                                 </Form.Group>
 
-                                <Button 
-                                    type="submit" 
-                                    variant="primary" 
+                                <Button
+                                    type="submit"
+                                    variant="primary"
                                     className="w-100 rounded-pill py-3 fw-bold shadow-sm mb-3"
                                 >
                                     Log In

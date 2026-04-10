@@ -1,9 +1,9 @@
 import React from 'react';
 import { Nav, Offcanvas, Button, Stack } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { 
-    IoGrid, IoMap, IoPerson, IoLogOut, 
-    IoPlanet, IoClose, IoMedical 
+import {
+    IoGrid, IoMap, IoPerson, IoLogOut,
+    IoPlanet, IoClose, IoMedical, IoAnalytics, IoNavigate
 } from 'react-icons/io5';
 import logo from '../../assets/logo.svg';
 
@@ -44,10 +44,10 @@ const DashboardSidebar = ({ isMobile, show, onHide }) => {
                         Navigation HUD
                     </small>
                     {menuItems.map((item) => (
-                        <Nav.Link 
+                        <Nav.Link
                             key={item.path}
-                            as={Link} 
-                            to={item.path} 
+                            as={Link}
+                            to={item.path}
                             className={`nav-link-dashboard ${location.pathname === item.path ? 'active' : ''}`}
                             onClick={isMobile ? onHide : undefined}
                         >
@@ -58,8 +58,8 @@ const DashboardSidebar = ({ isMobile, show, onHide }) => {
             </div>
 
             <div className="mt-auto px-4 pt-4 border-top">
-                <Button 
-                    variant="link" 
+                <Button
+                    variant="link"
                     className="text-danger fw-bold text-decoration-none d-flex align-items-center gap-2 p-0"
                     onClick={handleLogout}
                 >
