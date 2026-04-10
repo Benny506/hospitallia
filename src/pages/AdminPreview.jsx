@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Badge, Spinner } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchHospitals } from '../redux/hospitalSlice';
-import { 
+import {
     AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
     PieChart, Pie, Cell, BarChart, Bar, Legend
 } from 'recharts';
@@ -25,7 +25,7 @@ const AdminPreview = () => {
 
         // 1. Patient Flux (last 6 months avg)
         const flux = [
-            { month: 'Oct', count: 0 }, { month: 'Nov', count: 0 }, 
+            { month: 'Oct', count: 0 }, { month: 'Nov', count: 0 },
             { month: 'Dec', count: 0 }, { month: 'Jan', count: 0 },
             { month: 'Feb', count: 0 }, { month: 'Mar', count: 0 }
         ];
@@ -128,14 +128,14 @@ const AdminPreview = () => {
                                     <AreaChart data={chartData.flux}>
                                         <defs>
                                             <linearGradient id="colorCount" x1="0" y1="0" x2="0" y2="1">
-                                                <stop offset="5%" stopColor="#0d6efd" stopOpacity={0.8}/>
-                                                <stop offset="95%" stopColor="#0d6efd" stopOpacity={0}/>
+                                                <stop offset="5%" stopColor="#0d6efd" stopOpacity={0.8} />
+                                                <stop offset="95%" stopColor="#0d6efd" stopOpacity={0} />
                                             </linearGradient>
                                         </defs>
                                         <CartesianGrid strokeDasharray="3 3" vertical={false} />
                                         <XAxis dataKey="month" axisLine={false} tickLine={false} />
                                         <YAxis axisLine={false} tickLine={false} />
-                                        <Tooltip 
+                                        <Tooltip
                                             contentStyle={{ borderRadius: '15px', border: 'none', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
                                             itemStyle={{ fontWeight: 'bold' }}
                                         />
@@ -149,13 +149,13 @@ const AdminPreview = () => {
                     <Col lg={4}>
                         <Card className="border-0 shadow-sm p-4 rounded-4 bg-white h-100">
                             <h5 className="fw-bold mb-4">Facility Distribution</h5>
-                            <div style={{ width: '100%', height: 300 }}>
+                            <div style={{ width: '100%', height: 450 }}>
                                 <ResponsiveContainer>
                                     <PieChart>
                                         <Pie
                                             data={chartData.specialties}
-                                            innerRadius={60}
-                                            outerRadius={80}
+                                            innerRadius={70}
+                                            outerRadius={100}
                                             paddingAngle={5}
                                             dataKey="value"
                                         >
@@ -163,10 +163,10 @@ const AdminPreview = () => {
                                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                             ))}
                                         </Pie>
-                                        <Tooltip 
-                                             contentStyle={{ borderRadius: '15px', border: 'none', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
+                                        <Tooltip
+                                            contentStyle={{ borderRadius: '15px', border: 'none', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
                                         />
-                                        <Legend />
+                                        <Legend verticalAlign="bottom" />
                                     </PieChart>
                                 </ResponsiveContainer>
                             </div>
@@ -182,7 +182,7 @@ const AdminPreview = () => {
                                         <CartesianGrid strokeDasharray="3 3" vertical={false} />
                                         <XAxis dataKey="name" axisLine={false} tickLine={false} />
                                         <YAxis axisLine={false} tickLine={false} />
-                                        <Tooltip 
+                                        <Tooltip
                                             cursor={{ fill: '#f8f9fa' }}
                                             contentStyle={{ borderRadius: '15px', border: 'none', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
                                         />
