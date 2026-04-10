@@ -9,7 +9,31 @@
             "rating": 4.8,
             "type": "Specialist",
             "phone": "+234 800 123 4567",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A premier multi-specialist facility renowned for advanced surgical procedures and state-of-the-art diagnostic imaging.",
+                "specialties": ["Neurosurgery", "Oncology", "Orthopedics", "Cardiology"],
+                "facilities": ["24/7 Emergency", "MRI Center", "ICU", "Blood Bank", "Pediatric Wing"],
+                "staff_stats": { "doctors": 65, "nurses": 140, "specialists": 28 },
+                "capacity": { "total_beds": 250, "occupied_beds": 180, "icu_beds": 35 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 2100 }, { "month": "Nov", "count": 2350 }, 
+                    { "month": "Dec", "count": 2800 }, { "month": "Jan", "count": 2400 },
+                    { "month": "Feb", "count": 2150 }, { "month": "Mar", "count": 2600 }
+                ],
+                "responsiveness": 96,
+                "patient_satisfaction": 4.9
+            },
+            "guidance": {
+                "landmarks": ["Beside the Zenith Bank HQ", "Directly opposite Eko Hotel"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Enter Victoria Island via Ozumba Mbadiwe Avenue." },
+                    { "step": 2, "instruction": "Turn left at the second traffic light into Medical Drive." },
+                    { "step": 3, "instruction": "Proceed 500m; the hospital gate is on your right." }
+                ]
+            }
         },
         {
             "id": "h2",
@@ -20,7 +44,31 @@
             "rating": 4.5,
             "type": "General",
             "phone": "+234 800 234 5678",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "The primary public health hub for Ikeja, providing comprehensive general medicine, emergency services, and community outreach.",
+                "specialties": ["Internal Medicine", "Surgery", "Gastroenterology", "Ophthalmology"],
+                "facilities": ["Trauma Center", "Radiology", "Maternity Ward", "Dialysis Unit"],
+                "staff_stats": { "doctors": 85, "nurses": 210, "volunteers": 40 },
+                "capacity": { "total_beds": 400, "occupied_beds": 385, "icu_beds": 15 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 4500 }, { "month": "Nov", "count": 4700 }, 
+                    { "month": "Dec", "count": 5200 }, { "month": "Jan", "count": 4900 },
+                    { "month": "Feb", "count": 4600 }, { "month": "Mar", "count": 5100 }
+                ],
+                "responsiveness": 78,
+                "patient_satisfaction": 4.2
+            },
+            "guidance": {
+                "landmarks": ["Near the Ikeja City Mall", "Opposite the Govt Secretariat"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Follow Obafemi Awolowo Way toward Ikeja." },
+                    { "step": 2, "instruction": "Take the exit for General Way." },
+                    { "step": 3, "instruction": "Enter the third gate on the left marked 'Public Access'." }
+                ]
+            }
         },
         {
             "id": "h3",
@@ -31,7 +79,31 @@
             "rating": 4.9,
             "type": "Pediatric",
             "phone": "+234 800 345 6789",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A world-class pediatric center focusing exclusively on child health, from neonatal care to adolescent mental health.",
+                "specialties": ["Neonatology", "Child Psychology", "Adolescent Care", "Vaccination"],
+                "facilities": ["NICU", "Child Play Area", "Family Support Center", "Vaccination HUB"],
+                "staff_stats": { "doctors": 30, "nurses": 60, "play_therapists": 12 },
+                "capacity": { "total_beds": 80, "occupied_beds": 45, "icu_beds": 10 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 800 }, { "month": "Nov", "count": 950 }, 
+                    { "month": "Dec", "count": 1100 }, { "month": "Jan", "count": 900 },
+                    { "month": "Feb", "count": 850 }, { "month": "Mar", "count": 1050 }
+                ],
+                "responsiveness": 98,
+                "patient_satisfaction": 5.0
+            },
+            "guidance": {
+                "landmarks": ["Next to the Lekki Arts Market", "Behind the Circle Mall"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Drive along the Lekki-Epe Expressway." },
+                    { "step": 2, "instruction": "Turn into Pediatric Lane at the fourth roundabout." },
+                    { "step": 3, "instruction": "The clinic is the bright blue building at the end of the cul-de-sac." }
+                ]
+            }
         },
         {
             "id": "h4",
@@ -42,7 +114,31 @@
             "rating": 4.6,
             "type": "Maternity",
             "phone": "+234 800 456 7890",
-            "status": "Closed"
+            "status": "Closed",
+            "deep_details": {
+                "description": "Specialized obstetric and gynecological care with a focus on maternal wellness and post-natal support.",
+                "specialties": ["Obstetrics", "Gynecology", "Post-natal Care", "Midwifery"],
+                "facilities": ["Labor Suites", "Ultrasound Lab", "Antenatal Hall"],
+                "staff_stats": { "doctors": 18, "nurses": 45, "midwives": 22 },
+                "capacity": { "total_beds": 120, "occupied_beds": 0, "icu_beds": 5 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1200 }, { "month": "Nov", "count": 1300 }, 
+                    { "month": "Dec", "count": 1400 }, { "month": "Jan", "count": 0 },
+                    { "month": "Feb", "count": 0 }, { "month": "Mar", "count": 0 }
+                ],
+                "responsiveness": 85,
+                "patient_satisfaction": 4.7
+            },
+            "guidance": {
+                "landmarks": ["Close to the National Stadium", "Opposite the Post Office"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Motherhood Street via Funsho Williams Avenue." },
+                    { "step": 2, "instruction": "Proceed past the stadium underpass." },
+                    { "step": 3, "instruction": "Hospital is the white 4-story building on your left." }
+                ]
+            }
         },
         {
             "id": "h5",
@@ -53,7 +149,31 @@
             "rating": 4.7,
             "type": "Cardiology",
             "phone": "+234 800 567 8901",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Nigeria's leading center for cardiovascular and thoracic health, featuring world-class surgeons and equipment.",
+                "specialties": ["Cardiology", "Pulmonology", "Thoracic Surgery", "Sleep Medicine"],
+                "facilities": ["Cath Lab", "ICU", "Respiratory Rehab", "Cardiac Screening"],
+                "staff_stats": { "doctors": 40, "nurses": 90, "technicians": 25 },
+                "capacity": { "total_beds": 150, "occupied_beds": 120, "icu_beds": 30 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1500 }, { "month": "Nov", "count": 1600 }, 
+                    { "month": "Dec", "count": 1800 }, { "month": "Jan", "count": 1700 },
+                    { "month": "Feb", "count": 1550 }, { "month": "Mar", "count": 1750 }
+                ],
+                "responsiveness": 92,
+                "patient_satisfaction": 4.8
+            },
+            "guidance": {
+                "landmarks": ["Opposite the Ikoyi Club", "Near the Golf Course"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Drive into Ikoyi via Alfred Rewane Road." },
+                    { "step": 2, "instruction": "Turn at the Cardiac Ave signpost." },
+                    { "step": 3, "instruction": "The institute is the glass building after the second gate." }
+                ]
+            }
         },
         {
             "id": "h6",
@@ -64,7 +184,31 @@
             "rating": 4.4,
             "type": "General",
             "phone": "+234 800 678 9012",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A community-focused medical center providing reliable outpatient services and laboratory testing.",
+                "specialties": ["Family Medicine", "Laboratory Services", "Basic Surgery", "Emergency"],
+                "facilities": ["Stat Lab", "Minor Surgery Room", "Outpatient Clinic"],
+                "staff_stats": { "doctors": 12, "nurses": 30, "lab_scientists": 15 },
+                "capacity": { "total_beds": 50, "occupied_beds": 35, "icu_beds": 2 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 3000 }, { "month": "Nov", "count": 3200 }, 
+                    { "month": "Dec", "count": 3500 }, { "month": "Jan", "count": 3300 },
+                    { "month": "Feb", "count": 3100 }, { "month": "Mar", "count": 3400 }
+                ],
+                "responsiveness": 82,
+                "patient_satisfaction": 4.4
+            },
+            "guidance": {
+                "landmarks": ["Close to UNILAG Main Gate", "Next to Yaba Tech"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Wellness Road in the Yaba district." },
+                    { "step": 2, "instruction": "Proceed until you see the UNILAG bus stop." },
+                    { "step": 3, "instruction": "The center is the two-story building on Wellness Road." }
+                ]
+            }
         },
         {
             "id": "h7",
@@ -75,7 +219,31 @@
             "rating": 4.8,
             "type": "Ophthalmology",
             "phone": "+234 800 789 0123",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "Specialized eye care facility offering laser surgeries, corneal transplants, and pediatric ophthalmology.",
+                "specialties": ["LASIK", "Retinal Care", "Pediatric Ophthalmology", "Optometry"],
+                "facilities": ["Laser Room", "Optical Shop", "Minor Surgery Center"],
+                "staff_stats": { "doctors": 15, "optometrists": 20, "nurses": 10 },
+                "capacity": { "total_beds": 20, "occupied_beds": 18, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 2200 }, { "month": "Nov", "count": 2400 }, 
+                    { "month": "Dec", "count": 2600 }, { "month": "Jan", "count": 2300 },
+                    { "month": "Feb", "count": 2250 }, { "month": "Mar", "count": 2500 }
+                ],
+                "responsiveness": 88,
+                "patient_satisfaction": 4.8
+            },
+            "guidance": {
+                "landmarks": ["Near the Bar Beach", "Next to the IBM Building"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Vision Street via Ahmadu Bello Way." },
+                    { "step": 2, "instruction": "Proceed past the beach front." },
+                    { "step": 3, "instruction": "The clinic is located in the Oceanic Building, floor 2." }
+                ]
+            }
         },
         {
             "id": "h8",
@@ -86,7 +254,31 @@
             "rating": 4.3,
             "type": "Orthopedic",
             "phone": "+234 800 890 1234",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Comprehensive bone and joint health center providing physiotherapy and major corrective surgeries.",
+                "specialties": ["Spine Surgery", "Physiotherapy", "Joint Replacement", "Sports Trauma"],
+                "facilities": ["Physio Gym", "Orthotics Lab", "Operating Theater"],
+                "staff_stats": { "doctors": 22, "physiotherapists": 35, "nurses": 40 },
+                "capacity": { "total_beds": 100, "occupied_beds": 75, "icu_beds": 5 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1100 }, { "month": "Nov", "count": 1250 }, 
+                    { "month": "Dec", "count": 1400 }, { "month": "Jan", "count": 1200 },
+                    { "month": "Feb", "count": 1150 }, { "month": "Mar", "count": 1350 }
+                ],
+                "responsiveness": 80,
+                "patient_satisfaction": 4.3
+            },
+            "guidance": {
+                "landmarks": ["Near the Ikeja Airport Terminal", "Beside the Hilton Ikeja"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Follow Mobolaji Bank Anthony Way toward the airport." },
+                    { "step": 2, "instruction": "Turn at Bone Drive intersection." },
+                    { "step": 3, "instruction": "The center is the modern gray building at number 90." }
+                ]
+            }
         },
         {
             "id": "h9",
@@ -97,7 +289,31 @@
             "rating": 4.9,
             "type": "Dental",
             "phone": "+234 800 901 2345",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Advanced dental hospital providing cosmetic dentistry, orthodontics, and restorative services.",
+                "specialties": ["Cosmetic Dentistry", "Orthodontics", "Endodontics", "Oral Surgery"],
+                "facilities": ["Imaging Lab", "Sterilization Hub", "Kids Dental Zone"],
+                "staff_stats": { "dentists": 25, "assistants": 30, "technicians": 10 },
+                "capacity": { "total_beds": 0, "occupied_beds": 0, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1800 }, { "month": "Nov", "count": 1950 }, 
+                    { "month": "Dec", "count": 2100 }, { "month": "Jan", "count": 1900 },
+                    { "month": "Feb", "count": 1850 }, { "month": "Mar", "count": 2050 }
+                ],
+                "responsiveness": 95,
+                "patient_satisfaction": 4.9
+            },
+            "guidance": {
+                "landmarks": ["Behind the Surulere Plaza", "Opposite the Cinema"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Smile Ave from Western Avenue." },
+                    { "step": 2, "instruction": "Proceed past the Plaza Mall." },
+                    { "step": 3, "instruction": "The clinic is at the third block on the right." }
+                ]
+            }
         },
         {
             "id": "h10",
@@ -108,7 +324,31 @@
             "rating": 4.6,
             "type": "Dermatology",
             "phone": "+234 800 012 3456",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "Premium dermatology center specializing in clinical treatment and advanced skin restoration.",
+                "specialties": ["Clinical Dermatology", "Skin Cancer Care", "Laser Therapy", "Aesthetics"],
+                "facilities": ["Laser Room", "Patch Test Lab", "Treatment Lounge"],
+                "staff_stats": { "doctors": 12, "nurses": 10, "aestheticians": 15 },
+                "capacity": { "total_beds": 10, "occupied_beds": 8, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1400 }, { "month": "Nov", "count": 1550 }, 
+                    { "month": "Dec", "count": 1700 }, { "month": "Jan", "count": 1500 },
+                    { "month": "Feb", "count": 1450 }, { "month": "Mar", "count": 1650 }
+                ],
+                "responsiveness": 84,
+                "patient_satisfaction": 4.6
+            },
+            "guidance": {
+                "landmarks": ["Inside the Maryland Mall complex", "Opposite the ENEOS Station"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Enter the Maryland Mall parking zone." },
+                    { "step": 2, "instruction": "Locate the Medical Wing on the 3rd Floor." },
+                    { "step": 3, "instruction": "The clinic is unit 312." }
+                ]
+            }
         },
         {
             "id": "h11",
@@ -119,7 +359,31 @@
             "rating": 4.2,
             "type": "General",
             "phone": "+234 800 123 4567",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A comprehensive general hospital serving the Agege community with affordable healthcare services.",
+                "specialties": ["GP Services", "Basic Surgery", "Inpatient Care"],
+                "facilities": ["Pharmacy", "Lab", "Inpatient Wards"],
+                "staff_stats": { "doctors": 35, "nurses": 70 },
+                "capacity": { "total_beds": 180, "occupied_beds": 140, "icu_beds": 8 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 3500 }, { "month": "Nov", "count": 3700 }, 
+                    { "month": "Dec", "count": 4200 }, { "month": "Jan", "count": 3900 },
+                    { "month": "Feb", "count": 3600 }, { "month": "Mar", "count": 4100 }
+                ],
+                "responsiveness": 70,
+                "patient_satisfaction": 4.0
+            },
+            "guidance": {
+                "landmarks": ["Near the Agege Train Station", "Beside the Primary School"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Head toward Skyline Blvd from Agege Market." },
+                    { "step": 2, "instruction": "Proceed 1km toward the school." },
+                    { "step": 3, "instruction": "The hospital is the large gated compound at the 100 mark." }
+                ]
+            }
         },
         {
             "id": "h12",
@@ -130,7 +394,31 @@
             "rating": 4.5,
             "type": "Diagnostic",
             "phone": "+234 800 234 5678",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "High-precision diagnostic facility providing laboratory and radiological services with fast turnaround times.",
+                "specialties": ["Clinical Pathology", "CT Scan", "X-Ray", "Biochemistry"],
+                "facilities": ["Imaging Lab", "Blood Lab", "Fast-track Lounge"],
+                "staff_stats": { "scientists": 40, "radiologists": 12, "assistants": 20 },
+                "capacity": { "total_beds": 0, "occupied_beds": 0, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 5500 }, { "month": "Nov", "count": 5700 }, 
+                    { "month": "Dec", "count": 6200 }, { "month": "Jan", "count": 5900 },
+                    { "month": "Feb", "count": 5600 }, { "month": "Mar", "count": 6100 }
+                ],
+                "responsiveness": 94,
+                "patient_satisfaction": 4.5
+            },
+            "guidance": {
+                "landmarks": ["Opposite the Mushin Post Office", "Behind the Olosha Market"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Lab Way in Mushin." },
+                    { "step": 2, "instruction": "Proceed past the market junction." },
+                    { "step": 3, "instruction": "The lab is the modern white building at number 78." }
+                ]
+            }
         },
         {
             "id": "h13",
@@ -141,7 +429,31 @@
             "rating": 4.7,
             "type": "Fertility",
             "phone": "+234 800 345 6789",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "Specialized reproductive health clinic focusing on modern IVF and fertility treatments with high success rates.",
+                "specialties": ["IVF", "Reproductive Endocrinology", "IUI", "Genetic Screening"],
+                "facilities": ["IVF Lab", "Recovery Suites", "Counseling Hub"],
+                "staff_stats": { "specialists": 15, "embryologists": 10, "nurses": 20 },
+                "capacity": { "total_beds": 30, "occupied_beds": 28, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 600 }, { "month": "Nov", "count": 750 }, 
+                    { "month": "Dec", "count": 900 }, { "month": "Jan", "count": 700 },
+                    { "month": "Feb", "count": 650 }, { "month": "Mar", "count": 850 }
+                ],
+                "responsiveness": 88,
+                "patient_satisfaction": 4.7
+            },
+            "guidance": {
+                "landmarks": ["Beside the Ikoyi Polo Club", "Opposite the Southern Sun Hotel"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Enter Hope Street from Awolowo Road." },
+                    { "step": 2, "instruction": "Proceed until the Polo Club entrance." },
+                    { "step": 3, "instruction": "The clinic is the gated building marked 'First Choice'." }
+                ]
+            }
         },
         {
             "id": "h14",
@@ -152,7 +464,31 @@
             "rating": 4.8,
             "type": "Psychiatry",
             "phone": "+234 800 456 7890",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Comprehensive psychiatric care center focusing on mental wellness, addiction recovery, and stabilization.",
+                "specialties": ["Clinical Psychology", "Psychiatry", "Rehabilitation", "Group Therapy"],
+                "facilities": ["Counseling Rooms", "Inpatient Wards", "Rehab Center"],
+                "staff_stats": { "psychologists": 20, "psychiatrists": 12, "nurses": 40 },
+                "capacity": { "total_beds": 100, "occupied_beds": 85, "icu_beds": 2 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 900 }, { "month": "Nov", "count": 1050 }, 
+                    { "month": "Dec", "count": 1200 }, { "month": "Jan", "count": 1000 },
+                    { "month": "Feb", "count": 950 }, { "month": "Mar", "count": 1150 }
+                ],
+                "responsiveness": 92,
+                "patient_satisfaction": 4.8
+            },
+            "guidance": {
+                "landmarks": ["Close to the Gbagada General Hospital", "Near the High Court"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Head North along the Oworonshoki Expressway." },
+                    { "step": 2, "instruction": "Turn at the Gbagada exit then into Peace Lane." },
+                    { "step": 3, "instruction": "The clinic is at the end of the lane." }
+                ]
+            }
         },
         {
             "id": "h15",
@@ -163,7 +499,31 @@
             "rating": 4.6,
             "type": "Sports Medicine",
             "phone": "+234 800 567 8901",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Specialized orthopedic and physiotherapy clinic focused on sports injuries and athletic peak performance.",
+                "specialties": ["Sports Surgery", "Physiotherapy", "Performance Testing", "Nutrition"],
+                "facilities": ["Hydrotherapy Pool", "Modern Gym", "Assessment Lab"],
+                "staff_stats": { "doctors": 10, "physiotherapists": 25, "nutritionists": 5 },
+                "capacity": { "total_beds": 20, "occupied_beds": 12, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1100 }, { "month": "Nov", "count": 1250 }, 
+                    { "month": "Dec", "count": 1400 }, { "month": "Jan", "count": 1200 },
+                    { "month": "Feb", "count": 1150 }, { "month": "Mar", "count": 1350 }
+                ],
+                "responsiveness": 86,
+                "patient_satisfaction": 4.6
+            },
+            "guidance": {
+                "landmarks": ["Near the Alausa Govt House", "Behind the Ikeja Golf Club"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Athlete Drive in the Alausa district." },
+                    { "step": 2, "instruction": "Proceed toward the golf club perimeter." },
+                    { "step": 3, "instruction": "The clinic is at the first gated block on the left." }
+                ]
+            }
         },
         {
             "id": "h16",
@@ -174,7 +534,31 @@
             "rating": 4.4,
             "type": "Nephrology",
             "phone": "+234 800 678 9012",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "Specialized kidney care hub featuring modern dialysis machines and renal transplant support.",
+                "specialties": ["Nephrology", "Dialysis", "Renal Dietetics", "Transplant Support"],
+                "facilities": ["Dialysis Hall", "Sterile Lab", "Fast-track Clinic"],
+                "staff_stats": { "specialists": 10, "nurses": 30, "technicians": 15 },
+                "capacity": { "total_beds": 40, "occupied_beds": 38, "icu_beds": 5 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 3000 }, { "month": "Nov", "count": 3200 }, 
+                    { "month": "Dec", "count": 3500 }, { "month": "Jan", "count": 3300 },
+                    { "month": "Feb", "count": 3100 }, { "month": "Mar", "count": 3400 }
+                ],
+                "responsiveness": 80,
+                "patient_satisfaction": 4.4
+            },
+            "guidance": {
+                "landmarks": ["Opposite the Port Gate", "Behind the Riverdale Hotel"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate River Road in Apapa." },
+                    { "step": 2, "instruction": "Proceed past the Port Gate." },
+                    { "step": 3, "instruction": "The center is the gated building after the hotel." }
+                ]
+            }
         },
         {
             "id": "h17",
@@ -185,7 +569,31 @@
             "rating": 4.9,
             "type": "Geriatric",
             "phone": "+234 800 789 0123",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A comprehensive care home and medical center focusing exclusively on elderly wellness and dementia care.",
+                "specialties": ["Geriatrics", "Dementia Care", "Pain Management", "Physio"],
+                "facilities": ["Elder Care Home", "Safe Garden", "Therapy Pool"],
+                "staff_stats": { "doctors": 12, "nurses": 60, "caregivers": 40 },
+                "capacity": { "total_beds": 120, "occupied_beds": 95, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1200 }, { "month": "Nov", "count": 1350 }, 
+                    { "month": "Dec", "count": 1500 }, { "month": "Jan", "count": 1300 },
+                    { "month": "Feb", "count": 1250 }, { "month": "Mar", "count": 1450 }
+                ],
+                "responsiveness": 94,
+                "patient_satisfaction": 4.9
+            },
+            "guidance": {
+                "landmarks": ["Near the Festac Town Gate", "Next to the Community Park"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Enter Festac via the main gate." },
+                    { "step": 2, "instruction": "Proceed to Elder Way at the third avenue." },
+                    { "step": 3, "instruction": "The clinic is the gated building on the right." }
+                ]
+            }
         },
         {
             "id": "h18",
@@ -196,7 +604,31 @@
             "rating": 4.1,
             "type": "Community",
             "phone": "+234 800 890 1234",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "A local healthcare unit dedicated to affordable vaccination, maternity, and GP services.",
+                "specialties": ["GP", "Immunization", "Maternity", "Community Health"],
+                "facilities": ["GP Clinic", "Vaccination HUB", "Emergency Unit"],
+                "staff_stats": { "doctors": 12, "nurses": 25, "volunteers": 15 },
+                "capacity": { "total_beds": 40, "occupied_beds": 32, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 4000 }, { "month": "Nov", "count": 4200 }, 
+                    { "month": "Dec", "count": 4500 }, { "month": "Jan", "count": 4300 },
+                    { "month": "Feb", "count": 4100 }, { "month": "Mar", "count": 4400 }
+                ],
+                "responsiveness": 68,
+                "patient_satisfaction": 4.0
+            },
+            "guidance": {
+                "landmarks": ["Opposite the Ebute Metta Market", "Close to the Health Center"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Locate Unity Square in Ebute Metta." },
+                    { "step": 2, "instruction": "Proceed toward the market entrance." },
+                    { "step": 3, "instruction": "The clinic is located in the community health building." }
+                ]
+            }
         },
         {
             "id": "h19",
@@ -207,7 +639,31 @@
             "rating": 4.8,
             "type": "Oncology",
             "phone": "+234 800 901 2345",
-            "status": "Busy"
+            "status": "Busy",
+            "deep_details": {
+                "description": "State-of-the-art oncology center providing chemotherapy, radiation therapy, and specialized cancer research.",
+                "specialties": ["Oncology", "Hematology", "Radiation Therapy", "Genetics"],
+                "facilities": ["Radiation Bunker", "Chemo Suite", "Oncology Lab"],
+                "staff_stats": { "specialists": 25, "nurses": 50, "scientists": 15 },
+                "capacity": { "total_beds": 60, "occupied_beds": 58, "icu_beds": 10 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 2200 }, { "month": "Nov", "count": 2400 }, 
+                    { "month": "Dec", "count": 2600 }, { "month": "Jan", "count": 2300 },
+                    { "month": "Feb", "count": 2250 }, { "month": "Mar", "count": 2500 }
+                ],
+                "responsiveness": 88,
+                "patient_satisfaction": 4.8
+            },
+            "guidance": {
+                "landmarks": ["Near the Victoria Island Toll Plaza", "Opposite the Mobil Building"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Enter Victoria Island via the Lekki-Epe toll plaza." },
+                    { "step": 2, "instruction": "Turn at the first intersection into Legacy Way." },
+                    { "step": 3, "instruction": "The institute is the modern glass building after the gate." }
+                ]
+            }
         },
         {
             "id": "h20",
@@ -218,7 +674,31 @@
             "rating": 4.5,
             "type": "ENT",
             "phone": "+234 800 012 3456",
-            "status": "Available"
+            "status": "Available",
+            "deep_details": {
+                "description": "Specialized clinic focusing on ear, nose, and throat health with advanced audiology diagnostic equipment.",
+                "specialties": ["Audiology", "ENT Surgery", "Speech Therapy", "Sleep Apnea"],
+                "facilities": ["Audiology Center", "Sleep Lab", "ENT Surgery Unit"],
+                "staff_stats": { "specialists": 15, "audiologists": 12, "nurses": 20 },
+                "capacity": { "total_beds": 40, "occupied_beds": 25, "icu_beds": 0 }
+            },
+            "analytics": {
+                "monthly_patients": [
+                    { "month": "Oct", "count": 1800 }, { "month": "Nov", "count": 2050 }, 
+                    { "month": "Dec", "count": 2200 }, { "month": "Jan", "count": 2000 },
+                    { "month": "Feb", "count": 1950 }, { "month": "Mar", "count": 2150 }
+                ],
+                "responsiveness": 84,
+                "patient_satisfaction": 4.5
+            },
+            "guidance": {
+                "landmarks": ["Near the Oshodi Transport Interchange", "Behind the Health Plaza"],
+                "step_by_step": [
+                    { "step": 1, "instruction": "Follow Agege Motor Road to the Oshodi Interchange." },
+                    { "step": 2, "instruction": "Turn at North Ave signpost." },
+                    { "step": 3, "instruction": "The clinic is unit 33 in the Health Plaza." }
+                ]
+            }
         }
     ]
 }

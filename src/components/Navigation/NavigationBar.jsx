@@ -2,10 +2,13 @@ import React from 'react';
 import { Navbar, Nav, Container, Button, Offcanvas } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
+import { useSelector } from 'react-redux';
+import { Stack } from 'react-bootstrap';
 
 const NavigationBar = () => {
     const navigate = useNavigate();
     const location = window.location;
+    const { isAuthenticated } = useSelector((state) => state.auth);
     const [show, setShow] = React.useState(false);
 
     const handleClose = () => setShow(false);
@@ -54,18 +57,60 @@ const NavigationBar = () => {
                             <Nav.Link href="#home" onClick={(e) => handleNavClick(e, 'home')}>Home</Nav.Link>
                             <Nav.Link href="#features" onClick={(e) => handleNavClick(e, 'features')}>Features</Nav.Link>
                             <Nav.Link href="#about" onClick={(e) => handleNavClick(e, 'about')}>About Us</Nav.Link>
-                            <Nav.Link href="#footer" onClick={(e) => handleNavClick(e, 'footer')}>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/admin" className="text-primary fw-bold">Admin Intelligence</Nav.Link>
                         </Nav>
-                        <Button
-                            variant="primary"
-                            className="px-4 py-2 rounded-pill fw-bold"
-                            onClick={() => {
-                                handleClose();
-                                navigate('/map');
-                            }}
-                        >
-                            Explore Map
-                        </Button>
+                        {isAuthenticated ? (
+                            <Button
+                                variant="primary"
+                                className="px-4 py-2 rounded-pill fw-bold shadow-sm"
+                                onClick={() => {
+                                    handleClose();
+                                    navigate('/dashboard');
+                                }}
+                            >
+                                Dashboard HUD
+                            </Button>
+                        ) : (
+                            <>
+                                <Stack direction="horizontal" gap={3} className="d-none d-lg-flex">
+                                    <Nav.Link as={Link} to="/login" className="fw-bold text-dark">Log In</Nav.Link>
+                                    <Button
+                                        variant="primary"
+                                        className="px-4 py-2 rounded-pill fw-bold shadow-sm"
+                                        onClick={() => {
+                                            handleClose();
+                                            navigate('/signup');
+                                        }}
+                                    >
+                                        Join Network
+                                    </Button>
+                                </Stack>
+
+                                {/* Mobile view buttons */}
+                                <div className="d-lg-none mt-3 d-flex flex-column gap-2">
+                                    <Button 
+                                        variant="outline-primary" 
+                                        className="rounded-pill fw-bold"
+                                        onClick={() => {
+                                            handleClose();
+                                            navigate('/login');
+                                        }}
+                                    >
+                                        Log In
+                                    </Button>
+                                    <Button
+                                        variant="primary"
+                                        className="rounded-pill fw-bold"
+                                        onClick={() => {
+                                            handleClose();
+                                            navigate('/signup');
+                                        }}
+                                    >
+                                        Join Now
+                                    </Button>
+                                </div>
+                            </>
+                        )}
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>

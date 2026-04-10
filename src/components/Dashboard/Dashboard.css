@@ -1,0 +1,81 @@
+/* Command Center HUD Styles */
+.dashboard-wrapper {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.dashboard-sidebar {
+    background: #ffffff;
+    border-right: 1px solid #e9ecef;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.02);
+}
+
+.sidebar-scroll {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.nav-link-dashboard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: #6c757d;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 0 50px 50px 0;
+    margin-right: 15px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.nav-link-dashboard:hover {
+    background: #f0f7ff;
+    color: var(--bs-primary);
+}
+
+.nav-link-dashboard.active {
+    background: #e7f1ff;
+    color: var(--bs-primary);
+    border-left: 4px solid var(--bs-primary);
+}
+
+.dashboard-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 16px 24px;
+    z-index: 10;
+}
+
+.mono {
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: #dee2e6;
+    border-radius: 10px;
+}
+
+/* Dashboard Cards */
+.dash-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+}

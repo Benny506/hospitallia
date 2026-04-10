@@ -7,9 +7,11 @@ import Footer from '../components/Footer/Footer';
 import { IoLocate, IoNavigate, IoMedical, IoShieldCheckmark } from 'react-icons/io5';
 import heroImg from '../assets/hero-bg.png';
 import featuresImg from '../assets/features-bg.png';
+import { useSelector } from 'react-redux';
 
 const LandingPage = () => {
     const navigate = useNavigate();
+    const { isAuthenticated } = useSelector((state) => state.auth);
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -52,7 +54,7 @@ const LandingPage = () => {
                                     designed to provide real-time guidance and accurate mapping
                                     at your fingertips.
                                 </p>
-                                <Stack direction="horizontal" gap={3}>
+                                <Stack direction="horizontal" gap={3} className="flex-wrap">
                                     <Button
                                         variant="primary"
                                         size="lg"
@@ -61,14 +63,25 @@ const LandingPage = () => {
                                     >
                                         Find Hospitals Now
                                     </Button>
-                                    {/* <Button
-                                         variant="outline-secondary"
-                                         size="lg"
-                                         className="px-5 py-3 rounded-pill fw-bold"
-                                         href="#features"
-                                     >
-                                         Learn More
-                                     </Button> */}
+                                    {isAuthenticated ? (
+                                        <Button
+                                            variant="outline-primary"
+                                            size="lg"
+                                            className="px-5 py-3 rounded-pill fw-bold border-2"
+                                            onClick={() => navigate('/dashboard')}
+                                        >
+                                            In Command
+                                        </Button>
+                                    ) : (
+                                        <Button
+                                            variant="outline-primary"
+                                            size="lg"
+                                            className="px-5 py-3 rounded-pill fw-bold border-2"
+                                            onClick={() => navigate('/signup')}
+                                        >
+                                            Create Account
+                                        </Button>
+                                    )}
                                 </Stack>
                             </motion.div>
                         </Col>

@@ -1,11 +1,18 @@
 import React from 'react';
 import { Card, Badge, Button, Stack } from 'react-bootstrap';
-import { IoStar, IoCall, IoLocation, IoTime } from 'react-icons/io5';
+import { IoStar, IoCall, IoLocation, IoTime, IoInformationCircle } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { selectHospital } from '../../redux/hospitalSlice';
 
 const HospitalCard = ({ hospital, isSelected }) => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleMoreInfo = (e) => {
+        e.stopPropagation(); // Prevent centering on map when clicking more info
+        navigate(`/hospital/${hospital.id}`);
+    };
 
     return (
         <Card
@@ -29,13 +36,19 @@ const HospitalCard = ({ hospital, isSelected }) => {
                     <span>{hospital.address}</span>
                 </p>
 
-                <Stack direction="horizontal" gap={3} className="mt-3">
+                <Stack direction="horizontal" gap={3} className="mt-3 align-items-center">
                     <div className="text-primary small fw-bold d-flex align-items-center gap-1">
                         <IoTime /> {hospital.type}
                     </div>
-                    <div className="text-muted small d-flex align-items-center gap-1 ms-auto">
-                        <IoCall /> {hospital.phone}
-                    </div>
+                    <Button 
+                        variant="primary-light" 
+                        size="sm" 
+                        className="rounded-pill px-3 py-1 ms-auto fw-bold text-primary d-flex align-items-center gap-1"
+                        onClick={handleMoreInfo}
+                        style={{ fontSize: '11px', border: '1px solid var(--bs-primary)' }}
+                    >
+                        <IoInformationCircle /> Info
+                    </Button>
                 </Stack>
             </Card.Body>
             {isSelected && (

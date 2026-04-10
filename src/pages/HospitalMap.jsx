@@ -214,7 +214,7 @@ const HospitalMap = () => {
                                     key={hospital.id}
                                     position={{ lat: hospital.lat, lng: hospital.lng }}
                                     onClick={() => handleMarkerClick(hospital)}
-                                    animation={selectedHospital?.id === hospital.id && window.google ? window.google.maps.Animation.BOUNCE : null}
+                                    animation={selectedHospital?.id === hospital.id && window.google?.maps?.Animation ? window.google.maps.Animation.BOUNCE : null}
                                 />
                             ))}
 
