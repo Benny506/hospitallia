@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import NavigationBar from '../components/Navigation/NavigationBar';
 import Footer from '../components/Footer/Footer';
 import { IoLocate, IoNavigate, IoMedical, IoShieldCheckmark } from 'react-icons/io5';
-import heroImg from '../assets/hero-bg.png';
+import heroImg from '../assets/hospital-hero.png';
 import featuresImg from '../assets/features-bg.png';
 import { useSelector } from 'react-redux';
 
@@ -94,7 +94,7 @@ const LandingPage = () => {
                             >
                                 <img
                                     src={heroImg}
-                                    alt="City Medical Map"
+                                    alt="Premium Hospital Facility"
                                     className="img-fluid rounded-5 shadow-2xl"
                                 />
                             </motion.div>
